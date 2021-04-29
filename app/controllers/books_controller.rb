@@ -24,8 +24,6 @@ class BooksController < ApplicationController
     @post_comment = PostComment.new
   end 
 
- 
-
   def edit
     @book = Book.find(params[:id])
     if current_user.id != @book.user_id
